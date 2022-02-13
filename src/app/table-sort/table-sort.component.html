@@ -1,0 +1,21 @@
+<form>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th sortable="name" scope="col" (sort)="onSort($event)">Employee</th>
+        <th sortable="jobTitle" scope="col" (sort)="onSort($event)">Job Title</th>
+        <th sortable="tenure" scope="col" (sort)="onSort($event)">Tenure</th>
+        <th sortable="gender" scope="col" (sort)="onSort($event)">Gender</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let employee of employees$ | async">
+        <td scope="row">{{ employee.name }}</td>
+        <td scope="row">{{ employee.jobTitle }}</td>
+        <td scope="row">{{ employee.tenure }}</td>
+        <td scope="row">{{ employee.gender }}</td>
+      </tr>
+      </tbody>
+    </table>
+  
+  </form>

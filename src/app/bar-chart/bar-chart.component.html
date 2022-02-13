@@ -1,0 +1,17 @@
+<div>
+    <!--link the barcomp css styling to the div section-->
+    <div>
+        <!--add a title to your bar chart-->
+        <h4>Employee by Gender</h4>
+        <div style="display: block">
+            <!--shrink the size of your canvas so that your bar chart fits onto the screen better-->
+            <canvas baseChart height="200px"
+                [data]="barChartData"
+               [options]="barChartOptions"
+               [plugins]="barChartPlugins"
+                [type]="barChartType"
+                (chartHover)="chartHovered($event)">
+            </canvas>
+        </div>
+    </div>
+</div>

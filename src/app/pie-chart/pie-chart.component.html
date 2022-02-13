@@ -1,0 +1,16 @@
+<div>
+    <!--link the piecomp css styling to the div section-->
+        <div>
+    <!--add a title to your bar chart-->
+          <h4>Employee by Job Title</h4>
+    <!--dd the chart that you created-->
+          <div class="chart">
+            <canvas baseChart
+                    [data]="pieChartData"
+                    [type]="pieChartType"
+                    [options]="pieChartOptions"
+                    [plugins]="pieChartPlugins">
+            </canvas>
+          </div>
+        </div>
+    </div>
